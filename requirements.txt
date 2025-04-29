@@ -4,4 +4,6 @@ scikit-learn
 pandas
 numpy
 matplotlib
-gunicorn
+seaborn
+scipy
+uvicorn

@@ -1,15 +1,19 @@
-### Boston House Pricing Prediction
+ML model deployment
+===================
 
-### Software And Tools Requirements
+Complete code (including a trained model) to deploy and inference a machine learning model (built on the iris dataset) using Docker and FastAPI.
 
-1. [Github Account](https://github.com)
-2. [HerokuAccount](https://heroku.com)
-3. [VSCodeIDE](https://code.visualstudio.com/)
-4. [GitCLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
+1. With terminal navigate to the root of this repository
+--------------------------------------------------------
 
-Create a new environment
+2. Build docker image
+---------------------
+.. code-block::
 
-```
-conda create -p venv python==3.11 -y
-```
+    docker build -t image_name .
 
+3. Run container
+----------------
+.. code-block::
+
+    docker run --name container_name -p 8000:8000 image_name
